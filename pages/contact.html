@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="category.html">Blog Categories</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Contact Me</h1>
-        <p>Feel free to reach out at: <a href="shaanmr07@gmail.com">shaanmr07@gmail.com</a></p>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p>If you have any questions, feel free to reach out using the information below or by filling out the contact form.</p>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Name:</strong> Shaan Mohammad Rizwan</p>
+                <p><strong>Email:</strong> <a href="mailto:shaanmr07@gmail.com">shaanmr07@gmail.com</a></p>
+                <p><strong>Phone:</strong> +8801628015752</p>
+                <p><strong>Address:</strong> Khilgaon, Dhaka, Bangladesh</p>
+            </div>
+
+            <h2>Send Me a Message</h2>
+            <form action="https://formspree.io/f/your_form_id" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>© 2024. Created by: Shaan Mohammad Rizwan</p>
+        <p>&copy; 2024 Shaan Mohammad Rizwan</p>
     </footer>
 </body>
 </html>
